@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1366.565" height="72" viewBox="0 0 1366.565 72">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{fill:#dedede}.cls-3{clip-path:url(#clip-path)}.cls-4{opacity:.11}.cls-5{fill:gray}
+        </style>
+        <clipPath id="clip-path">
+            <path id="Rectangle_150" d="M0 0h1366.565v72H0z" class="cls-1" data-name="Rectangle 150" transform="translate(-.21 2989.014)"/>
+        </clipPath>
+    </defs>
+    <g id="Group_456" data-name="Group 456" transform="translate(.21 -55.528)">
+        <path id="Rectangle_149" d="M0 0h1366.565v72H0z" class="cls-2" data-name="Rectangle 149" transform="translate(-.21 55.528)"/>
+        <g id="Group_95" data-name="Group 95" transform="translate(0 -2933.486)">
+            <g id="Group_94" class="cls-3" data-name="Group 94">
+                <g id="Group_90" class="cls-4" data-name="Group 90">
+                    <path id="Path_332" d="M316.182 3011.2c-32.252-29.628-76.481-54.2-128.575-71.343l-42.807 48.875c56.488 18.142 101.19 47.617 125.512 83.293h91.741c40.888-60.025 139.479-102.465 254.826-102.981V2913.2c-126.061.43-236.789 39.347-300.7 98" class="cls-5" data-name="Path 332"/>
+                </g>
+                <g id="Group_91" class="cls-4" data-name="Group 91">
+                    <path id="Path_333" d="M642.877 3011.2c-32.253-29.628-76.482-54.2-128.575-71.343l-42.808 48.871c56.488 18.142 101.19 47.617 125.512 83.293h91.742c40.887-60.021 139.478-102.461 254.825-102.977V2913.2c-126.06.43-236.789 39.347-300.7 98" class="cls-5" data-name="Path 333"/>
+                </g>
+                <g id="Group_92" class="cls-4" data-name="Group 92">
+                    <path id="Path_334" d="M980.247 3011.2c-32.252-29.628-76.481-54.2-128.575-71.343l-42.807 48.871c56.488 18.142 101.19 47.617 125.512 83.293h91.741c40.888-60.025 139.479-102.465 254.826-102.981v-55.84c-126.061.43-236.789 39.347-300.7 98" class="cls-5" data-name="Path 334"/>
+                </g>
+                <g id="Group_93" class="cls-4" data-name="Group 93">
+                    <path id="Path_335" d="M1301.959 3011.2c-32.252-29.628-76.481-54.2-128.575-71.343l-42.807 48.871c56.488 18.142 101.19 47.617 125.512 83.293h91.741c40.888-60.025 139.479-102.465 254.826-102.981v-55.84c-126.061.43-236.789 39.347-300.7 98" class="cls-5" data-name="Path 335"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
