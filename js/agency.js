@@ -219,6 +219,8 @@ function showMedia(el) {
   if (el !== 'all') {
     $('.media-section').hide();
     $(el).fadeIn(200);
+  } else {
+    $('.media-section').show();
   }
 }
 
@@ -227,5 +229,8 @@ $('.navTabsMob').on('change', function () {
   if (el !== 'all') {
     $('.media-section').hide();
     $(el).fadeIn(200);
+  } else {
+    $('.media-section').show();
   }
+
 });
