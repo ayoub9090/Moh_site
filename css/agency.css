@@ -47,6 +47,30 @@ i.icomoon {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-play-circle-solid:before {
+	content: "\e92c";
+}
+
+.icon-volume-up-solid:before {
+	content: "\e92d";
+}
+
+.icon-bars-solid:before {
+	content: "\e92e";
+}
+
+.icon-times-solid:before {
+	content: "\e92f";
+}
+
+.icon-plus-solid:before {
+	content: "\e930";
+}
+
+.icon-minus-solid:before {
+	content: "\e931";
+}
+
 .icon-service_tick:before {
 	content: "\e92b";
 }
@@ -209,7 +233,6 @@ i.icomoon {
 
 .icon-search:before {
 	content: "\e90b";
-	color: #1e365c;
 }
 
 .icon-facebook:before {
