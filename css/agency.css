@@ -2466,9 +2466,13 @@ div.icon-sheet:hover {
 	width: 70%;
 	position: absolute;
 	left: 15%;
-	height: 2px;
+	height: 4px;
 	background: #18365d;
 	bottom: 0px;
+}
+
+.media-section div.item {
+	margin-bottom: 15px;
 }
 
 .dropdown-accessibility {
@@ -3205,6 +3209,10 @@ h3.no_border {
 
 .navTabs--5 li {
 	width: calc(100% / 5 - 4px);
+}
+
+.navTabs--3 li {
+	width: calc(100% / 3 - 3px);
 }
 
 .navTabs--multi li a {

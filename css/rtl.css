@@ -284,3 +284,9 @@ div.icon-sheet {
         margin-right: 10%;
     }
 }
+
+@media (min-width: 576px) {
+    .offset-sm-4 {
+        margin-left: 0;
+    }
+}
