@@ -234,3 +234,13 @@ $('.navTabsMob').on('change', function () {
   }
 
 });
+
+
+$('a.toggleLink').click(function () {
+  $('a.toggleLink.active').removeClass('active');
+  $(this).addClass('active');
+});
+function toggle(el) {
+  $('.toggleParent > div').hide();
+  $(el).fadeIn(200);
+}
