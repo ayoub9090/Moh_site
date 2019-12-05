@@ -15,6 +15,20 @@ body {
     direction: rtl;
 }
 
+.navbar-brand {
+    float: right;
+}
+
+.navbar-nav.ml-auto {
+    margin-right: auto!important;
+    margin-left: 0 !important;
+}
+
+.search_link, .language-switch, #AccessibilityDropdown {
+    margin-right: auto;
+    margin-left: 20px;
+}
+
 .dropdown-item:focus:before, .dropdown-item:hover:before {
     right: 10px;
 }
@@ -23,10 +37,6 @@ body {
     float: left;
     /* padding-left: 20px; */
     text-align: right;
-}
-
-.navbar-brand {
-    float: left;
 }
 
 .text-left {
