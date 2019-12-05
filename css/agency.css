@@ -47,6 +47,38 @@ i.icomoon {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-service_tick:before {
+	content: "\e92b";
+}
+
+.icon-pdf_download:before {
+	content: "\e924";
+}
+
+.icon-research_cases:before {
+	content: "\e925";
+}
+
+.icon-hajj:before {
+	content: "\e926";
+}
+
+.icon-testing_service:before {
+	content: "\e927";
+}
+
+.icon-health:before {
+	content: "\e928";
+}
+
+.icon-physicians:before {
+	content: "\e929";
+}
+
+.icon-hospital:before {
+	content: "\e92a";
+}
+
 .icon-copyright:before {
 	content: "\e916";
 }
@@ -3147,6 +3179,10 @@ h3.no_border {
 	background-color: #4a98cd;
 }
 
+.bg-blueLinear {
+	background-image: linear-gradient(to right, #70ac62 -1571%, #4a98cd -1569%);
+}
+
 .bg-greenLinear {
 	background-image: linear-gradient(334deg, #70ac62 109%, #4a98cd -33%);
 }
@@ -3240,6 +3276,27 @@ h3.no_border {
 	border: 0;
 }
 
+.side_nav .carousel-indicators {
+	text-align: right;
+	float: right;
+	right: 4% !important;
+	left: inherit;
+	margin-right: 0;
+	margin-left: 0;
+	top: 0;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.bg-darkGray {
+	background-color: #d5d7d6;
+}
+
+.side_nav .carousel-indicators li {
+	width: 3px;
+	height: 92px;
+}
+
 /* Track */
 
 .scrolled::-webkit-scrollbar-track, .advancedSearch-modal .modal-body::-webkit-scrollbar-track {
@@ -3300,6 +3357,53 @@ h3.no_border {
 
 .search_form .dropdown-box.quicklinks h4 a i {
 	color: #808080 !important;
+}
+
+.text-orange {
+	color: #f99f29;
+}
+
+.text-red {
+	color: #ed1c2d;
+}
+
+.text-darkRed {
+	color: #ed1c2d;
+}
+
+.text-purble {
+	color: #6d2e90;
+}
+
+.text-smoothGreen {
+	color: #649b76;
+}
+
+.text-smoothBlue {
+	color: #0078b7;
+}
+
+.text-darkBlue {
+	color: #123a62;
+}
+
+.icon-arrow-down.right {
+	transform: rotate(-90deg);
+	display: inline-block;
+}
+
+.view-more-researched i {
+	font-size: 14px;
+	vertical-align: middle;
+}
+
+.v-item {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.v-item .icon {
+	font-size: 52px;
 }
 
 @media(min-width:992px) {
