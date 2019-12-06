@@ -47,6 +47,10 @@ i.icomoon {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arabic_letter:before {
+	content: "\e932";
+}
+
 .icon-play-circle-solid:before {
 	content: "\e92c";
 }
@@ -1277,7 +1281,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .fixed-top-2 {
-	margin-top: 49px;
+	margin-top: 50px;
 }
 
 .navbar-nav {
@@ -1308,13 +1312,12 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .language-switch {
 	font-size: 16px;
 	margin-right: 20px;
-	font-family: 'sf_compact_displayultralight';
+	font-family: 'SF_Compact_Display_Regular';
 }
 
 .date_temp span {
 	font-size: 16px;
 	margin-right: 10px;
-	font-family: 'sf_compact_displayultralight';
 	vertical-align: middle;
 	;
 }
@@ -1330,7 +1333,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 #topNav.sticky {
 	background: #fff;
-	padding-top: 2px;
+	padding-top: 5px;
 }
 
 .sticky#topNav a, .sticky#topNav span, .sticky#topNav a i {
@@ -1895,8 +1898,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .copyrights {
-	font-family: 'sf_compact_displayultralight';
-	font-size: 13px;
+	font-size: 14px;
 }
 
 .desktop-only-item {
@@ -2076,10 +2078,11 @@ div.icon-sheet:hover {
 	z-index: 99;
 	display: inline-block;
 	width: 220px;
-	right: -220px;
+	right: -100px;
 	transition: all 0.6s;
 	background: #fff;
 	border-radius: 10px 0px 0px 30px;
+	height: 38px;
 }
 
 .rates-holder .close {
@@ -2106,8 +2109,9 @@ div.icon-sheet:hover {
 	margin-right: 0;
 }
 
-.rates-holder.rates-holder-open {
+.rates-holder:hover, .rates-holder.rates-holder-open {
 	right: 0;
+	height: 123px;
 }
 
 .rates-wrapper>a:hover {
@@ -2138,6 +2142,9 @@ div.icon-sheet:hover {
 	padding: 5px 15px;
 	text-align: left;
 	padding-bottom: 0;
+	padding-top: 7px;
+	display: inline-block;
+	width: 100%;
 }
 
 .any-questions-wrapper {
@@ -2149,7 +2156,6 @@ div.icon-sheet:hover {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	position: fixed;
-	right: 0;
 	top: 78%;
 	overflow: hidden;
 	z-index: 99;
@@ -2157,11 +2163,16 @@ div.icon-sheet:hover {
 	font-size: 16px;
 	transition: all 0.6s;
 	width: 222px;
-	right: -222px;
+	right: -160px;
 	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
 }
 
+/*
 .any-questions-wrapper.any-questions-wrapper-open {
+	right: 0;
+}*/
+
+.any-questions-wrapper:hover {
 	right: 0;
 }
 
@@ -2236,6 +2247,25 @@ div.icon-sheet:hover {
 	padding-right: 20px;
 	padding-left: 15px;
 	bottom: 6%;
+	display: none;
+}
+
+.need-help-open {
+	background: #00a33e;
+	color: #fff !important;
+	font-size: 36px;
+	position: fixed;
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+	left: 40px;
+	text-decoration: none !important;
+	z-index: 99;
+	border-radius: 50%;
+	bottom: 6%;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	padding-top: 6px;
 }
 
 .need-help p {
@@ -2309,6 +2339,10 @@ div.icon-sheet:hover {
 	font-size: 20px;
 	vertical-align: middle;
 	margin-left: 8px;
+}
+
+.tools-min a i {
+	vertical-align: middle;
 }
 
 .aplus span {
@@ -2937,6 +2971,10 @@ li.plusMinus a {
 	width: 88px;
 }
 
+#mainNav.navbar-inner.navbar-shrink .navbar-brand img {
+	width: 70px;
+}
+
 #mainNav.navbar-inner .o-burger-menu.is-active span {
 	background: #18365d!important;
 }
@@ -2954,6 +2992,17 @@ li.plusMinus a {
 }
 
 /***#END# header**/
+
+.richContent img {
+	max-width: 77% !important;
+}
+
+.sidebar--sticky {
+	max-width: 34%;
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
 
 .page-title {
 	font-size: 32px;
@@ -3500,6 +3549,14 @@ h3.no_border {
 }
 
 @media(max-width:767px) {
+	.sidebar--sticky {
+		max-width: 100% !important;
+		width: 100%;
+		margin: 0;
+	}
+	.richContent img {
+		max-width: 100% !important;
+	}
 	.advancedSearch-modal .modal-header h3 {
 		font-size: 20px;
 	}

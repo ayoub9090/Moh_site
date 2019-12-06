@@ -16,9 +16,11 @@
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
+
   <link href="vendor/owl-carousel/owl.carousel.min.css" rel="stylesheet">
 
- <!--RTL -->
+
+  <!--RTL -->
   <link href="css/bootstrap-rtl.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
@@ -29,39 +31,51 @@
 </head>
 
 <body id="page-top" class="inner-body">
- <nav class="navbar navbar-expand-lg navbar-light fixed-top sticky" id="topNav">
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top sticky" id="topNav">
     <div class="header_top container relative">
       <div class="col-12 text-right">
+
         <a class="search_link relative" href="javascript:void(0)">
-          <i class="icomoon indexed icon-search" onclick="toggleSearch()"></i>
-
-
+          <i class="icomoon indexed icon-search" title="Search" onclick="toggleSearch()"></i>
         </a>
+
         <div class="language-switch inline">
           <a href="#">EN</a>
           <span>|</span>
           <a href="#">AR</a>
         </div>
 
+
         <div class="inline date_temp">
-          <span>11.8.2019</span>
+          <span>١١.٨.٢٠١٩</span>
           <span><i class="icomoon icon-sun1"></i></span>
-          <span> 39℃</span>
+          <span>℃ ٣٩ </span>
         </div>
-   <a title="Accessibility"  class="btn-trans" href="#"  id="AccessibilityDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Accessibility
+
+
+
+
+        <a title="Accessibility" class="btn-trans" href="#" id="AccessibilityDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          الإعدادات
         </a>
         <ul class="dropdown-menu dropdown-accessibility" aria-labelledby="AccessibilityDropdown">
-           <li class="plusMinus"> <a class="aplus" title="A-" href="#"><i class="fa fa-minus" aria-hidden="true"></i></a><span>A</span> <a class="aplus" title="A+" href="#"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-            <li class="grayscale"><a href="#" title="Volume Up"><i class="fas fa-volume-up"></i><span>Greyscale</span></a></li>
-            <li><a href="#" title="brightness"><i class="icomoon icon-sun1"></i></a></li>
+          <li class="plusMinus"> <a class="aplus" title="A-" href="#"><i class="fa fa-minus"
+                aria-hidden="true"></i></a><span><i class="icomoon icon-arabic_letter"></i></span> <a class="aplus"
+              title="A+" href="#"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+          <li class="grayscale"><a href="#" title="Volume Up"><i class="fas fa-volume-up"></i><span>مقياس الرمادية
+              </span></a>
+          </li>
+          <li><a href="#" title="brightness"><i class="icomoon icon-sun1"></i></a></li>
 
-            </ul>
+        </ul>
       </div>
 
     </div>
     <div class="search_form" style="display: none;">
-      <a href="javascript:toggleSearch()" class="outline-0"><i class="icomoon indexed icon-search"></i></a>
+      <a href="javascript:toggleSearch()" title="Search" class="outline-0"><i
+          class="icomoon indexed icon-search"></i></a>
       <form>
 
         <div>
@@ -117,8 +131,8 @@
 
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <img src="img/logo.svg" width="108" class="default" />
-        <img src="img/logo_colored.svg" width="108" class="blue" />
+        <img src="img/logo.svg" title="logo" alt="logo" width="108" class="default" />
+        <img src="img/logo_colored.svg" title="logo" alt="logo" width="108" class="blue" />
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -131,13 +145,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav  ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger active-link" href="#"><span>Home</span></a>
+            <a class="nav-link js-scroll-trigger active-link" href="#"><span>الصفحة الرئيسية</span></a>
           </li>
 
           <li class="nav-item relative dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-              <span>Awareness</span>
+              <span>التوعية الصحية</span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li> <a class="dropdown-item" href="#">Education</a></li>
@@ -157,7 +171,7 @@
           <li class="nav-item relative dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-              <span>E-Services</span>
+              <span>الخدمات الإلكترونية</span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li> <a class="dropdown-item" href="#">Patients & Citizens</a></li>
@@ -168,7 +182,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#"><span>Open Data</span></a>
+            <a class="nav-link js-scroll-trigger" href="#"><span>البيانات المفتوحة</span></a>
           </li>
           <li class="nav-item relative dropdown">
             <span class="nav-link " id="main_menu">
@@ -177,34 +191,37 @@
                 <span class="top-bar"></span><span class="bottom-bar"></span>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                <li><a class="dropdown-item disabled">MAIN MENU</a></li>
-                <li><a class="dropdown-item" href="#">The Ministry</a></li>
-                <li><a class="dropdown-item" href="#">Research</a></li>
-                <li><a class="dropdown-item" href="#">Regulatory</a></li>
-                <li><a class="dropdown-item" href="#">Affiliations</a></li>
-                <li><a class="dropdown-item" href="#">Interactive Map</a></li>
-                <li><a class="dropdown-item" href="#">Media Center</a></li>
-                <li><a class="dropdown-item" href="#">Mobile Apps</a></li>
+                <li><a class="dropdown-item disabled">القائمة الرئيسية
+                  </a></li>
+                <li><a class="dropdown-item" href="#">الوزارة</a></li>
+                <li><a class="dropdown-item" href="#">ابحاث</a></li>
+                <li><a class="dropdown-item" href="#">النظم</a></li>
+                <li><a class="dropdown-item" href="#">المنظمات </a></li>
+                <li><a class="dropdown-item" href="#">الخريطة التفاعلية</a></li>
+                <li><a class="dropdown-item" href="#">المركز الإعلامي</a></li>
+                <li><a class="dropdown-item" href="#">تطبيقات الجوال</a></li>
                 <li class="dropdown-divider"></li>
-                <li><a class="dropdown-item disabled">SHORTCUTS</a></li>
-                <li><a class="dropdown-item small" href="#" data-toggle="modal" data-target="#advancedSearch">Advanced
-                    Search</a></li>
-                <li><a class="dropdown-item small" href="#">Profile</a></li>
-                <li><a class="dropdown-item small" href="#">Contact us</a></li>
-                <li><a class="dropdown-item small" href="#">Settings</a></li>
+                <li><a class="dropdown-item disabled">اختصارات</a></li>
+                <li><a class="dropdown-item small" href="#" data-toggle="modal" data-target="#advancedSearch">بحث متقدم
+                  </a></li>
+                <li><a class="dropdown-item small" href="#">الملف الشخصي</a></li>
+                <li><a class="dropdown-item small" href="#">اتصل بنا</a></li>
+                <li><a class="dropdown-item small" href="#">الإعدادات
+                  </a></li>
 
               </ul>
             </span>
           </li>
           <li class="nav-item ">
             <span class="nav-link">
-              <a class=" sign-in" href="#"> SIGN IN</a>
+              <a class=" sign-in" href="#" title="تسجيل الدخول"> تسجيل الدخول</a>
             </span>
           </li>
           <li class="nav-item only-mob">
             <span class="nav-link">
-              <a class="text-green" data-toggle="modal" data-target="#sadeeqaForm" href="#"><i
-                  class="icomoon icon-smily menu-smiley"></i> Talk to Sadeeqa.</a>
+              <a class="text-green" data-toggle="modal" data-target="#sadeeqaForm" href="#"> <i
+                  class="icomoon icon-smily menu-smiley"></i>
+                تحدث مع صديقة</a>
             </span>
           </li>
         </ul>
@@ -212,8 +229,6 @@
       </div>
     </div>
   </nav>
-
-
 
 
 <!-- Page Title and breadCrump -->

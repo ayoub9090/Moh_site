@@ -89,11 +89,11 @@ if ($('.prop-list').length > 0) {
 
 $(document).ready(function () {
 
-
-  setTimeout(function () {
-    $('.any-questions-wrapper').addClass('any-questions-wrapper-open');
-  }, 600);
-
+  /*
+    setTimeout(function () {
+      $('.any-questions-wrapper').addClass('any-questions-wrapper-open');
+    }, 600);
+  */
 
   $('#quastion .box').matchHeight({ byrow: true });
   $('.aligned_box div').matchHeight({ byrow: true });
@@ -169,9 +169,9 @@ $(document).on('scroll', function () {
   if ($('.masthead').length > 0) {
     if ($(this).scrollTop() >= $('.masthead').height() - 250) {
       if (!forceClose) {
-        setTimeout(function () {
+        /*setTimeout(function () {
           $('.rates-holder').addClass('rates-holder-open');
-        }, 600);
+        }, 600);*/
       }
     }
   }
@@ -202,6 +202,10 @@ function scrollTo(el) {
 
 function close(el) {
   $(el).fadeOut(200);
+}
+
+function showNeedHelp() {
+  $('.need-help').fadeIn();
 }
 
 function addPropSearch() {
