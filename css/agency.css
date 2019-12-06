@@ -1663,6 +1663,10 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 	outline: 0;
 }
 
+.h3-small {
+	font-size: 94%;
+}
+
 .bg-bordered {
 	border: solid 0.5px #1e365c;
 }
