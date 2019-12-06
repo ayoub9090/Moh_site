@@ -441,6 +441,10 @@ div.icon-sheet {
     font-weight: normal;
 }
 
+.item p.learn-more {
+    text-align: left;
+}
+
 @media(min-width:992px) {
     .search_form.search_form--ar>a {
         display: none;
