@@ -245,8 +245,12 @@ body {
     font-weight: normal;
 }
 
-.sadeeqa-modal .close span, .modal-header .close, .search_link {
+.sadeeqa-modal .close span, .modal-header .close, .search_link, .icon {
     font-family: 'SF_Compact_Display_Regular';
+}
+
+.semi-header .info span, .semi-header .info a {
+    font-weight: bold;
 }
 
 .bg-toggle {
@@ -452,6 +456,7 @@ div.icon-sheet {
     .search_form .trans {
         padding-right: 0;
         width: 98%;
+        padding-top: 5px;
     }
     .search_form .dropdown-box {
         font-size: 18px;

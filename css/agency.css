@@ -3347,7 +3347,8 @@ h3.no_border {
 }
 
 .main-select {
-	max-width: 340px;
+	/*max-width: 340px;*/
+	width: auto;
 	margin: 0 auto;
 	color: #FFF;
 	font-size: 22px;
