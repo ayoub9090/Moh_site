@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,8 +19,14 @@
 
   <link href="vendor/owl-carousel/owl.carousel.min.css" rel="stylesheet">
 
+
+  <!--RTL -->
+  <link href="css/bootstrap-rtl.min.css" rel="stylesheet">
+
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
+  <!--RTL-->
+  <link href="css/rtl.css" rel="stylesheet">
 
 </head>
 
@@ -31,79 +35,93 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top sticky" id="topNav">
     <div class="header_top container relative">
       <div class="col-12 text-right">
+
         <a class="search_link relative" href="javascript:void(0)">
-          <i class="icomoon indexed icon-search" onclick="toggleSearch()"></i>
-
-
+          <i class="icomoon indexed icon-search" title="Search" onclick="toggleSearch()"></i>
         </a>
+
         <div class="language-switch inline">
           <a href="#">EN</a>
           <span>|</span>
           <a href="#">AR</a>
         </div>
 
+
         <div class="inline date_temp">
-          <span>11.8.2019</span>
+          <span>١١.٨.٢٠١٩</span>
           <span><i class="icomoon icon-sun1"></i></span>
-          <span> 39℃</span>
+          <span>℃ ٣٩ </span>
         </div>
-   <a title="Accessibility"  class="btn-trans" href="#"  id="AccessibilityDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Accessibility
+
+
+
+
+        <a title="Accessibility" class="btn-trans" href="#" id="AccessibilityDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          الإعدادات
         </a>
         <ul class="dropdown-menu dropdown-accessibility" aria-labelledby="AccessibilityDropdown">
-           <li class="plusMinus"> <a class="aplus" title="A-" href="#"><i class="fa fa-minus" aria-hidden="true"></i></a><span>A</span> <a class="aplus" title="A+" href="#"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-            <li class="grayscale"><a href="#" title="Volume Up"><i class="fas fa-volume-up"></i><span>Greyscale</span></a></li>
-            <li><a href="#" title="brightness"><i class="icomoon icon-sun1"></i></a></li>
+          <li class="plusMinus"> <a class="aplus" title="A-" href="#"><i class="fa fa-minus"
+                aria-hidden="true"></i></a><span><i class="icomoon icon-arabic_letter"></i></span> <a class="aplus"
+              title="A+" href="#"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+          <li class="grayscale"><a href="#" title="Volume Up"><i class="fas fa-volume-up"></i><span>مقياس الرمادية
+              </span></a>
+          </li>
+          <li><a href="#" title="brightness"><i class="icomoon icon-sun1"></i></a></li>
 
-            </ul>
+        </ul>
       </div>
 
     </div>
-    <div class="search_form" style="display: none;">
-      <a href="javascript:toggleSearch()" class="outline-0"><i class="icomoon indexed icon-search"></i></a>
+    <div class="search_form search_form--ar" style="display: none;">
+      <a href="javascript:toggleSearch()" title="Search" class="outline-0"><i
+          class="icomoon indexed icon-search"></i></a>
       <form>
 
         <div>
-          <input type="text" name="search" class="trans" placeholder="I’m searching for..." />
+          <input type="text" name="search" class="trans" placeholder="أنا ابحث عن..." />
         </div>
         <div class="dropdown-box options">
           <select class="bordered-select">
-            <option>A to Z</option>
-            <option>A to Z</option>
-            <option>A to Z</option>
+            <option>من الألف إلى الياء</option>
+            <option>من الألف إلى الياء</option>
+            <option>من الألف إلى الياء</option>
           </select>
           <span class="divider"></span>
           <select class="bordered-select">
-            <option>Personnas</option>
-            <option>Personnas</option>
-            <option>Personnas</option>
+            <option>الفئات المستهدفة</option>
+            <option>الفئات المستهدفة</option>
+            <option>الفئات المستهدفة</option>
           </select>
           <span class="divider"></span>
           <select class="bordered-select">
-            <option>Life Events</option>
-            <option>Life Events</option>
-            <option>Life Events</option>
+            <option>أحداث الحياة</option>
+            <option>أحداث الحياة</option>
+            <option>أحداث الحياة</option>
           </select>
         </div>
 
         <div class="dropdown-box quicklinks">
-          <h4 class="text-uppercase">Quick links <a href="javascript:toggleQuickLinks()"><i
-                class="icomoon icon-filter1"></i></a></h4>
+          <h4 class="text-uppercase"> روابط سريعة
+            <a href="javascript:toggleQuickLinks()"><i class="icomoon icon-filter1"></i></a></h4>
           <ul>
             <li>
-              <a href="#">Child’s health</a>
+              <a href="#"> صحة الطفل</a>
             </li>
             <li>
-              <a href="#">Statistics</a>
+              <a href="#"> إحصائيات</a>
             </li>
             <li>
-              <a href="#">Hajj visits</a>
+              <a href="#">نصائح صحية</a>
             </li>
             <li>
-              <a href="#">First aid</a>
+              <a href="#">زيارات الحج</a>
             </li>
             <li>
-              <a href="#"> Healthy lifestyle</a>
+              <a href="#"> الإسعافات الأولية</a>
+            </li>
+            <li>
+              <a href="#">نمط حياة صحي</a>
             </li>
           </ul>
         </div>
@@ -116,13 +134,13 @@
 
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <img src="img/logo.svg" width="108" class="default" />
-        <img src="img/logo_colored.svg" width="108" class="blue" />
+        <img src="img/logo.svg" title="logo" alt="logo" width="108" class="default" />
+        <img src="img/logo_colored.svg" title="logo" alt="logo" width="108" class="blue" />
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
-        Menu
+        القائمة
         <i class="fas fa-bars"></i>
       </button>
 
@@ -130,13 +148,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav  ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger active-link" href="#"><span>Home</span></a>
+            <a class="nav-link js-scroll-trigger active-link" href="#"><span>الصفحة الرئيسية</span></a>
           </li>
 
           <li class="nav-item relative dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-              <span>Awareness</span>
+              <span>التوعية الصحية</span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li> <a class="dropdown-item" href="#">Education</a></li>
@@ -156,7 +174,7 @@
           <li class="nav-item relative dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-              <span>E-Services</span>
+              <span>الخدمات الإلكترونية</span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li> <a class="dropdown-item" href="#">Patients & Citizens</a></li>
@@ -167,7 +185,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#"><span>Open Data</span></a>
+            <a class="nav-link js-scroll-trigger" href="#"><span>البيانات المفتوحة</span></a>
           </li>
           <li class="nav-item relative dropdown">
             <span class="nav-link " id="main_menu">
@@ -176,34 +194,37 @@
                 <span class="top-bar"></span><span class="bottom-bar"></span>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                <li><a class="dropdown-item disabled">MAIN MENU</a></li>
-                <li><a class="dropdown-item" href="#">The Ministry</a></li>
-                <li><a class="dropdown-item" href="#">Research</a></li>
-                <li><a class="dropdown-item" href="#">Regulatory</a></li>
-                <li><a class="dropdown-item" href="#">Affiliations</a></li>
-                <li><a class="dropdown-item" href="#">Interactive Map</a></li>
-                <li><a class="dropdown-item" href="#">Media Center</a></li>
-                <li><a class="dropdown-item" href="#">Mobile Apps</a></li>
+                <li><a class="dropdown-item disabled">القائمة الرئيسية
+                  </a></li>
+                <li><a class="dropdown-item" href="#">الوزارة</a></li>
+                <li><a class="dropdown-item" href="#">ابحاث</a></li>
+                <li><a class="dropdown-item" href="#">النظم</a></li>
+                <li><a class="dropdown-item" href="#">المنظمات </a></li>
+                <li><a class="dropdown-item" href="#">الخريطة التفاعلية</a></li>
+                <li><a class="dropdown-item" href="#">المركز الإعلامي</a></li>
+                <li><a class="dropdown-item" href="#">تطبيقات الجوال</a></li>
                 <li class="dropdown-divider"></li>
-                <li><a class="dropdown-item disabled">SHORTCUTS</a></li>
-                <li><a class="dropdown-item small" href="#" data-toggle="modal" data-target="#advancedSearch">Advanced
-                    Search</a></li>
-                <li><a class="dropdown-item small" href="#">Profile</a></li>
-                <li><a class="dropdown-item small" href="#">Contact us</a></li>
-                <li><a class="dropdown-item small" href="#">Settings</a></li>
+                <li><a class="dropdown-item disabled">اختصارات</a></li>
+                <li><a class="dropdown-item small" href="#" data-toggle="modal" data-target="#advancedSearch">بحث متقدم
+                  </a></li>
+                <li><a class="dropdown-item small" href="#">الملف الشخصي</a></li>
+                <li><a class="dropdown-item small" href="#">اتصل بنا</a></li>
+                <li><a class="dropdown-item small" href="#">الإعدادات
+                  </a></li>
 
               </ul>
             </span>
           </li>
           <li class="nav-item ">
             <span class="nav-link">
-              <a class=" sign-in" href="#"> SIGN IN</a>
+              <a class=" sign-in" href="#" title="تسجيل الدخول"> تسجيل الدخول</a>
             </span>
           </li>
           <li class="nav-item only-mob">
             <span class="nav-link">
-              <a class="text-green" data-toggle="modal" data-target="#sadeeqaForm" href="#"><i
-                  class="icomoon icon-smily menu-smiley"></i> Talk to Sadeeqa.</a>
+              <a class="text-green" data-toggle="modal" data-target="#sadeeqaForm" href="#"> <i
+                  class="icomoon icon-smily menu-smiley"></i>
+                تحدث مع صديقة</a>
             </span>
           </li>
         </ul>
@@ -211,553 +232,560 @@
       </div>
     </div>
   </nav>
- 
-
-  
-  <!-- Page Title and breadCrump -->
-  <section class="page-section pb-0">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="page-title text-uppercase text-blue">THE MINISTRY</h1>
-
-        </div>
-      </div>
-      <div class="row text-center">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">The Ministry</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Ministry Overview</li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-  </section>
 
 
-
-  <section class="page-section relative page-content pt-0">
-
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h3 class="section-heading text-uppercase text-blue">Ministry Overview</h3>
-
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-sm-9">
-          <img src="img/sample.jpg" />
-        </div>
-
-        <div class="col-sm-3">
-          <div class="sidebar text-left">
-            <ul>
-              <li><label>Browse Section</label></li>
-              <li><a href="#">About the Ministry</a></li>
-              <li><a href="#">Vision Realization Office</a></li>
-              <li><a href="#">MoH Initiative & Projects</a></li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-  </section>
-  <section class="page-section relative page-content pt-4">
-
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h3 class="section-heading text-uppercase text-blue">The Ministry of Health’s Vision</h3>
-          <p class="text-blue">Accomplishing a promising future by delivering best-quality integrated and comprehensive
-            healthcare
-            services.</p>
-
-        </div>
-      </div>
-      <div class="row text-center mt-5">
-        <div class="col-sm-3 col-6">
-          <div class="bordered-box">
-            <div><img src="img/eye.svg" /></div>
-            <p>
-              MoH VISION 2020
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-3 col-6">
-          <div class="bordered-box">
-            <div><img src="img/target.svg" /></div>
-            <p>
-              MoH Mission
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-3 col-6">
-          <div class="bordered-box">
-            <div> <img src="img/diamond.svg" /></div>
-            <p>
-              Values
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-3 col-6">
-          <div class="bordered-box">
-            <div><img src="img/clock.svg" /></div>
-            <p>
-              MoH History
-            </p>
-          </div>
-        </div>
-
-
-      </div>
-
-  </section>
-
-
-
-
-  <!-- Footer -->
-  <section id="footer" class="toscroll-4 relative">
-
-
-    <div class="container">
-
-      <div class="row subscribe-wrapper" id="subscribe-wrapper">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8 text-center subscribe-holder">
-          <h2>Subscribe.</h2>
-          <h3>Get a version of our latest newsletter!</h3>
-          <div class="subscribe-form-wrapper">
-            <form>
-              <span class="pull-left">
-                <input type="text" class="subscribe-email" placeholder="Enter your email">
-              </span>
-              <span class="pull-right">
-                <input type="submit" class="subscribe-submit" value="Sign up">
-              </span>
-            </form>
-            <div class="clr"></div>
-          </div>
-        </div>
-        <div class="col-sm-2 vision-logo">
-          <img alt="" class="vision" title="Vision" src="img/vision.png">
-        </div>
-      </div>
-      <hr>
-      <div class="row mt20 footer-links">
-        <div class="col-xs-12 col-sm-3 col-md-3">
-          <h5>Healthcare in Saudi Arabia</h5>
-          <ul class="list-unstyled quick-links">
-            <li><a href="#">National E-Health Strategy</a></li>
-            <li><a href="#">Sustainable development</a></li>
-            <li><a href="#">M Government</a></li>
-            <li><a href="#">MoH Initiatives 2030</a></li>
-            <li><a href="#">Health of visitors and residents</a></li>
-            <li><a href="#">Saudi Vision 2030</a></li>
-            <li><a href="#">Alerts</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-12 col-sm-3 col-md-3">
-          <h5>Important links</h5>
-          <ul class="list-unstyled quick-links">
-            <li><a href="#">Saudi Commision for Health Specialties(SCHS)</a></li>
-            <li><a href="#">National Portal Saudi</a></li>
-            <li><a href="#">Saudi Food &amp; Drug Authority</a></li>
-            <li><a href="#">Saudi Health Council</a></li>
-            <li><a href="#">CBAHI</a></li>
-            <li><a href="#">Council of Cooperative Health Insuarance</a></li>
-            <li><a href="#">Saudi Red Cresent Authority</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-12 col-sm-2 col-md-2">
-          <h5>MoH Portal</h5>
-          <ul class="list-unstyled quick-links">
-            <li><a href="#">About MoH Portal</a></li>
-            <li><a href="#">Personalization</a></li>
-            <li><a href="#">Ease of Usage</a></li>
-            <li><a href="#">Accessibility</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-12 col-sm-2 col-md-2">
-          <h5>Legal</h5>
-          <ul class="list-unstyled quick-links">
-            <li><a href="#">Legistlation policies</a></li>
-            <li><a href="#">Disclaimer</a></li>
-            <li><a href="#">Terms and Conditions</a></li>
-            <li><a href="#">Registration</a></li>
-            <li><a href="#">E-Services agreement</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-12 col-sm-2 col-md-2">
-          <h5>Support</h5>
-          <ul class="list-unstyled quick-links">
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Visit the Ministry</a></li>
-            <li><a href="#">Sitemap</a></li>
-            <li><a href="#" data-toggle="modal" data-target="#advancedSearch">Advanced Search</a></li>
-          </ul>
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-
-        <div class="col-sm-6 text-white copyrights">
-          <p>Ministry of Health - Kingdom of Saudi Arabia ©</p>
-        </div>
-
-        <div class="col-sm-6">
-          <ul class="list-unstyled list-inline social">
-            <li class="list-inline-item"><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a href="#" title="Facebook"><i class="fab fa-facebook"></i></a></li>
-            <li class="list-inline-item"><a href="#" title="Linkdin"><i class="fab fa-linkedin"></i></a></li>
-            <li class="list-inline-item"><a href="#" title="Youtube"><i class="fab fa-youtube"></i></a></li>
-          </ul>
-        </div>
+<!-- Page Title and breadCrump -->
+<section class="page-section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-title text-uppercase text-blue">الوزارة
+        </h1>
 
       </div>
     </div>
-  </section>
-
-
-
-  <!-- rateus sticky -->
-  <div class="rates-holder">
-    <a class="close" href="javascript:closeRate()"><i class="fa fa-times" aria-hidden="true"></i></a>
-    <span>Rate us!</span>
-    <div class="rate-us">
-      <p>How satisfied are you?</p>
-      <div class="rates-wrapper">
-        <a href="javascript:void(0)" title="Sad"><i class="icomoon icon-sad"></i></a>
-        <a href="javascript:void(0)" title="Angry"><i class="icomoon icon-angry"></i></a>
-        <a href="javascript:void(0)" title="So Happy"><i class="icomoon icon-so-happy"></i></a>
-        <a href="javascript:void(0)" title="Happy"><i class="icomoon icon-happy"></i></a>
-
-
-      </div>
+    <div class="row text-center">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">الصفحة الرئيسية</a></li>
+          <li class="breadcrumb-item"><a href="#">الوزارة
+            </a></li>
+          <li class="breadcrumb-item active" aria-current="page">عن الوزارة
+          </li>
+        </ol>
+      </nav>
     </div>
   </div>
+</section>
 
-  <!---Sadeeqa-->
-  <div class="any-questions-wrapper">
-    <a href="#" title="Talk to Sadeeqa." data-toggle="modal" data-target="#sadeeqaForm">
-      <div class="any-questions-inner">
-        <div class="sadeeqa-face">
-          <i class="icomoon icon-smily"></i>
 
-        </div>
-        <div class="any-questions">
-          <p>Any Questions?</p>
-          <span>Talk to Sadeeqa.</span>
-        </div>
-        <div class="clr"></div>
+
+<section class="page-section relative page-content pt-0">
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="section-heading text-uppercase text-blue">عن الوزارة
+        </h3>
+
       </div>
-    </a>
-  </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-sm-9">
+        <img src="img/sample.jpg" />
+      </div>
 
+      <div class="col-sm-3">
+        <div class="sidebar text-left">
+          <ul>
+            <li><label>في هذا القسم
+              </label></li>
 
-  <!-- Modal 1 "sadeeqa" -->
-  <div class="modal fade sadeeqa-modal" id="sadeeqaForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header text-left">
-          <h3 class="modal-title w-100 ">Hi, my name is Sadeeqa.
-            <br />
-            <p>I am here to help!</p>
-          </h3>
-
-
-
+            <li><a href="#">نبذة عن الوزارة</a></li>
+            <li><a href="#">مكتب تحقيق الرؤية</a></li>
+            <li><a href="#">مبادرات ومشاريع الوزارة</a></li>
+          </ul>
         </div>
-        <div class="modal-body mx-3">
+      </div>
 
-          <h3>Let me know you better.</h3>
+    </div>
+
+</section>
+<section class="page-section relative page-content pt-4">
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="section-heading text-uppercase text-blue">رؤية الوزارة
+        </h3>
+        <p class="text-blue">​إن وزارة الصحة من خلال كل ما تضمنته هذه الإستراتيجية من أهداف وسياسات ومشروعات تهدف إلى
+          تحقيق رؤية مستقبلية هي توفير الرعاية الصحية المتكاملة والشاملة بأعلى المستويات العالمية</p>
+
+      </div>
+    </div>
+    <div class="row text-center mt-5">
+      <div class="col-sm-3 col-6">
+        <div class="bordered-box">
+          <div><img src="img/eye.svg" /></div>
           <p>
-            Please fill in the form below before starting
-            the chat!
+            رؤية الوزارة لعام 2020
           </p>
-          <div class="md-form mb-3">
-            <label>Name*</label>
-            <input type="text" class="form-control validate">
+        </div>
+      </div>
+      <div class="col-sm-3 col-6">
+        <div class="bordered-box">
+          <div><img src="img/target.svg" /></div>
+          <p>
+            رسالة الوزارة
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-3 col-6">
+        <div class="bordered-box">
+          <div> <img src="img/diamond.svg" /></div>
+          <p>
+            قيم الوزارة
 
-          </div>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-3 col-6">
+        <div class="bordered-box">
+          <div><img src="img/clock.svg" /></div>
+          <p>
+            نبذة عن الوزارة
 
-          <div class="md-form mb-3">
-            <label>Email*</label>
-            <input type="email" class="form-control validate">
+          </p>
+        </div>
+      </div>
 
-          </div>
-          <div class="md-form mb-3">
-            <label>Phone Number*</label>
-            <input type="text" class="form-control validate">
 
-          </div>
+    </div>
 
-          <div class="col-12 text-center">
-            <a href="#" class="green-btn mb-0">Let's Chat</a>
-          </div>
+</section>
+
+
+
+<!-- Footer -->
+<section id="footer" class="toscroll-4 relative">
+
+  <div class="container">
+
+    <div class="row subscribe-wrapper" id="subscribe-wrapper">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8 text-center subscribe-holder">
+        <h2>اشترك</h2>
+        <h3>احصل على أحدث نسخة من منشورتنا الإخبارية</h3>
+        <div class="subscribe-form-wrapper">
+          <form>
+            <span class="pull-left">
+              <input type="text" class="subscribe-email" placeholder="أدخل بريدك الالكتروني">
+            </span>
+            <span class="pull-right">
+              <input type="submit" class="subscribe-submit" value="اشترك">
+            </span>
+          </form>
+          <div class="clr"></div>
+        </div>
+      </div>
+      <div class="col-sm-2 vision-logo">
+        <img alt="" class="vision" title="Vision" src="img/vision.png">
+      </div>
+    </div>
+    <hr>
+    <div class="row mt20 footer-links">
+      <div class="col-xs-12 col-sm-3 col-md-3">
+        <h5>الرعاية الصحية في المملكة العربية السعودية</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="#">الاستراتيجية الوطنية للصحة الإلكترونية</a></li>
+          <li><a href="#">تنمية مستدامة</a></li>
+          <li><a href="#">الحكومة المتنقلة</a></li>
+          <li><a href="#">مبادرات وزارة الصحة 2030</a></li>
+          <li><a href="#">Health of visitors and residents</a></li>
+          <li><a href="#">صحة الزائر والمقيم</a></li>
+          <li><a href="#">الرؤية السعودية 2030 </a></li>
+          <li><a href="#">التنبيهات</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-3 col-md-3">
+        <h5>روابط مهمة</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="#">الهيئة السعودية للتخصصات الصحية</a></li>
+          <li><a href="#">بوابة سعودي</a></li>
+          <li><a href="#">الهيئة العامة للغذاء والدواء</a></li>
+          <li><a href="#">المجلس الصحي السعودي</a></li>
+          <li><a href="#">المركز السعودي لاعتماد المنشآت الصحية</a></li>
+          <li><a href="#"> الضمان الصحي التعاوني</a></li>
+          <li><a href="#">هيئة الهلال الأحمر السعودي</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-2 col-md-2">
+        <h5>بوابة وزارة الصحة</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="#">حول البوابة الإلكترونية</a></li>
+          <li><a href="#">الطابع الشخصي</a></li>
+          <li><a href="#">سهولة الاستخدام</a></li>
+          <li><a href="#">الإعدادات</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-2 col-md-2">
+        <h5>قانوني</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="#">سياسات التشريع </a></li>
+          <li><a href="#">اخلاء المسؤوليه</a></li>
+          <li><a href="#">الأحكام والشروط </a></li>
+          <li><a href="#">التسجيل</a></li>
+          <li><a href="#">اتفاقية الخدمة الإلكترونية</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-2 col-md-2">
+        <h5>المساعدة</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="#">اتصل بنا</a></li>
+          <li><a href="#">الأسئلة الشائعة المتكررة </a></li>
+          <li><a href="#">زيارة الوزارة </a></li>
+          <li><a href="#">خريطة الموقع</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#advancedSearch">البحث المتقدم</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+
+      <div class="col-sm-6 text-white copyrights">
+        <p>وزارة الصحة – المملكة العربية السعودية 2019 ©</p>
+      </div>
+
+      <div class="col-sm-6">
+        <ul class="list-unstyled list-inline social">
+          <li class="list-inline-item"><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="#" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+          <li class="list-inline-item"><a href="#" title="Linkdin"><i class="fab fa-linkedin"></i></a></li>
+          <li class="list-inline-item"><a href="#" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!---Sadeeqa-->
+<div class="any-questions-wrapper">
+  <a href="#" title="Talk to Sadeeqa." data-toggle="modal" data-target="#sadeeqaForm">
+    <div class="any-questions-inner">
+      <div class="sadeeqa-face">
+        <i class="icomoon icon-smily"></i>
+
+      </div>
+      <div class="any-questions">
+        <p>أي أسئلة؟
+        </p>
+        <span>تحدث مع صديقة</span>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </a>
+</div>
+
+
+<!-- Modal 1 "sadeeqa" -->
+<div class="modal fade sadeeqa-modal" id="sadeeqaForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-left">
+        <h3 class="modal-title w-100 ">مرحبا، إسمي صديقة
+          <br />
+          <p>أنا هنا لمساعدتك
+          </p>
+        </h3>
+
+
+
+      </div>
+      <div class="modal-body mx-3">
+
+        <h3>عرف عن نفسك
+        </h3>
+        <p>
+          يرجى ملء النموذج أدناه قبل بدء التحدث
+
+        </p>
+        <div class="md-form mb-3">
+          <label>الاسم*
+          </label>
+          <input type="text" class="form-control validate">
 
         </div>
-        <div class="modal-footer text-right">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+
+        <div class="md-form mb-3">
+          <label>البريد الالكتروني*
+          </label>
+          <input type="email" class="form-control validate">
+
         </div>
+        <div class="md-form mb-3">
+          <label>رقم الهاتف
+          </label>
+          <input type="text" class="form-control validate">
+
+        </div>
+
+        <div class="col-12 text-center">
+          <a href="#" class="green-btn mb-0">دعنا نتحدث
+          </a>
+        </div>
+
+      </div>
+      <div class="modal-footer text-right">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
     </div>
   </div>
+</div>
 
 
 
-  <!-- Modal 2 "contact form" -->
-  <div class="modal fade contact-modal" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header text-center color-blue">
-          <h3 class="modal-title w-100 ">Hey there! Send us a message
-            and we’ll get back to you shortly.
+<!-- Modal 2 "contact form" -->
+<div class="modal fade contact-modal" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center color-blue">
+        <h3 class="modal-title w-100 ">مرحبا، ارسل لنا رسالة وسنعاود الاتصال بك قريباً
+        </h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+
+      </div>
+      <div class="modal-body mx-3 color-blue">
+
+
+        <div class="md-form mb-3">
+          <label>اسمك
+          </label>
+          <input type="text" class="form-control validate">
+
+        </div>
+
+        <div class="md-form mb-3">
+          <label>بريدك الالكتروني
+          </label>
+          <input type="email" class="form-control validate">
+
+        </div>
+        <div class="md-form mb-3">
+          <label>رسالتك</label>
+          <textarea class="form-control validate mh-1"></textarea>
+
+        </div>
+
+        <div class="col-12 text-center">
+          <a href="#" class="btn-blue-outline mb-0">أرسل</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--Modal 3 "Advanced search"-->
+<div class="modal fade advancedSearch-modal" id="advancedSearch" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-left color-blue relative">
+
+        <button type="button" class="close color-blue" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title w-100 ">بحث متقدم
+        </h3>
+        <a class="btn-blue-outline head3d font-bold mt-2" title="ابحث" href="#">ابحث</a>
+
+
+      </div>
+      <div class="modal-body mx-3 color-blue">
+        <div class="form-section">
+          <h3 class="color-blue">مفردات</h3>
+          <div class="md-form mb-3 ">
+            <div class="gray-group">
+              <input type="text" placeholder="كافة هذه الكلمات" class="form-control validate">
+              <p class="tip">مثال: المركز الاعلامي تتكون من كلمات مركز وكلمات إعلامي
+              </p>
+            </div>
+          </div>
+          <div class="md-form mb-3 ">
+            <div class="gray-group">
+              <input type="text" placeholder="العبارة الدقيقة" class="form-control validate">
+              <p class="tip">مثال:البحث عن كلمة التكنولوجيا المبتكرة كاملة </p>
+            </div>
+          </div>
+          <div class="md-form mb-3 ">
+            <div class="gray-group">
+              <input type="text" placeholder="أي من هذه الكلمات" class="form-control validate">
+              <p class="tip">مثال: يمكن البحث عن أي من هذه المفردات أو عن المعنى الكلي للمفردات طب الرعاية الصحية
+              </p>
+            </div>
+          </div>
+          <div class="md-form mb-3 ">
+            <div class="gray-group">
+              <input type="text" placeholder="ليس ضمن هذه الكلمات" class="form-control validate">
+              <p class="tip">مثال: نتيجة البحث لا تظهر "التكنولوجيا" و-"المبتكرة
+
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="form-section">
+          <h3 class="color-blue">نتائج البحث
           </h3>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+          <div class="md-form mb-3">
+            <div class="">
+              <select class="form-control ">
+                <option>نوع النتيجة
+                </option>
+                <option>نوع النتيجة
+                </option>
+                <option>نوع النتيجة
+                </option>
+              </select>
+
+            </div>
+          </div>
 
 
         </div>
-        <div class="modal-body mx-3 color-blue">
 
-
-          <div class="md-form mb-3">
-            <label>Your Name*</label>
-            <input type="text" class="form-control validate">
-
-          </div>
-
-          <div class="md-form mb-3">
-            <label>Your Email*</label>
-            <input type="email" class="form-control validate">
-
-          </div>
-          <div class="md-form mb-3">
-            <label>Your Message*</label>
-            <textarea class="form-control validate mh-1"></textarea>
-
-          </div>
-
-          <div class="col-12 text-center">
-            <a href="#" class="btn-blue-outline mb-0">submit</a>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!--Modal 3 "Advanced search"-->
-  <div class="modal fade advancedSearch-modal" id="advancedSearch" tabindex="-1" role="dialog"
-    aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header text-left color-blue relative">
-
-          <button type="button" class="close color-blue" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h3 class="modal-title w-100 ">Advanced Search
+        <div class="form-section">
+          <h3 class="color-blue">التاريخ
           </h3>
-          <a class="btn-blue-outline head3d font-bold mt-2" title="Search" href="#">Search</a>
+          <div class="md-form mb-3">
+            <div class="">
+              <div class="row mb-3">
+                <div class="col-12">
+                  <h3 class="color-blue no_border">من </h3>
+                </div>
+                <div class="col-6">
+                  <select class="form-control w-100">
+                    <option>الشهر</option>
+                    <option>الشهر</option>
+                    <option>الشهر</option>
+                  </select>
+                </div>
+                <div class="col-3  pr-0 pl-0">
+                  <select class="form-control w-100">
+                    <option>اليوم</option>
+                    <option>اليوم</option>
+                    <option>اليوم</option>
+                  </select>
+                </div>
+                <div class="col-3">
+                  <select class="form-control w-100">
+                    <option>السنه</option>
+                    <option>السنه</option>
+                    <option>السنه</option>
+                  </select>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="color-blue no_border">إلى
+                  </h3>
+                </div>
+                <div class="col-6">
+                  <select class="form-control w-100">
+                    <option>الشهر</option>
+                    <option>الشهر</option>
+                    <option>الشهر</option>
+                  </select>
+                </div>
+                <div class="col-3 pr-0 pl-0">
+                  <select class="form-control w-100">
+                    <option>اليوم</option>
+                    <option>اليوم</option>
+                    <option>اليوم</option>
+                  </select>
+                </div>
+                <div class="col-3">
+                  <select class="form-control w-100">
+                    <option>السنه</option>
+                    <option>السنه</option>
+                    <option>السنه</option>
+                  </select>
+                </div>
+
+              </div>
+
+            </div>
 
 
+          </div>
         </div>
-        <div class="modal-body mx-3 color-blue">
-          <div class="form-section">
-            <h3 class="color-blue">Words</h3>
-            <div class="md-form mb-3 ">
-              <div class="gray-group">
-                <input type="text" placeholder="All of these words" class="form-control validate">
-                <p class="tip">Example: Media center - Contains both “Media” and “Center”</p>
-              </div>
-            </div>
-            <div class="md-form mb-3 ">
-              <div class="gray-group">
-                <input type="text" placeholder="This exact phrase" class="form-control validate">
-                <p class="tip">Example: Innovative Technology - Contains the exact phrase “Innovative Technology”</p>
-              </div>
-            </div>
-            <div class="md-form mb-3 ">
-              <div class="gray-group">
-                <input type="text" placeholder="Any of these words" class="form-control validate">
-                <p class="tip">Example: Healthcare Medicine - Contains either “Healthcare” or “Medicine” (or both)</p>
-              </div>
-            </div>
-            <div class="md-form mb-3 ">
-              <div class="gray-group">
-                <input type="text" placeholder="None of these words" class="form-control validate">
-                <p class="tip">Example: Innovative Technology - Doesn’t contain the words “Innovative” or “Technology”
-                </p>
-              </div>
-            </div>
 
-          </div>
-          <div class="form-section">
-            <h3 class="color-blue">Result Type</h3>
-            <div class="md-form mb-3">
-              <div class="">
-                <select class="form-control ">
-                  <option>All Results</option>
-                  <option>All Results</option>
-                  <option>All Results</option>
-                </select>
-
-              </div>
-            </div>
-
-
-          </div>
-
-          <div class="form-section">
-            <h3 class="color-blue">Dates</h3>
-            <div class="md-form mb-3">
-              <div class="">
-                <div class="row mb-3">
-                  <div class="col-12">
-                    <h3 class="color-blue no_border">From</h3>
-                  </div>
-                  <div class="col-6">
-                    <select class="form-control w-100">
-                      <option>Month</option>
-                      <option>Month</option>
-                      <option>Month</option>
-                    </select>
-                  </div>
-                  <div class="col-3  pr-0 pl-0">
-                    <select class="form-control w-100">
-                      <option>Day</option>
-                      <option>Day</option>
-                      <option>Day</option>
-                    </select>
-                  </div>
-                  <div class="col-3">
-                    <select class="form-control w-100">
-                      <option>Year</option>
-                      <option>Year</option>
-                      <option>Year</option>
-                    </select>
-                  </div>
-
-                </div>
-                <div class="row">
-                  <div class="col-12">
-                    <h3 class="color-blue no_border">To</h3>
-                  </div>
-                  <div class="col-6">
-                    <select class="form-control w-100">
-                      <option>Month</option>
-                      <option>Month</option>
-                      <option>Month</option>
-                    </select>
-                  </div>
-                  <div class="col-3 pr-0 pl-0">
-                    <select class="form-control w-100">
-                      <option>Day</option>
-                      <option>Day</option>
-                      <option>Day</option>
-                    </select>
-                  </div>
-                  <div class="col-3">
-                    <select class="form-control w-100">
-                      <option>Year</option>
-                      <option>Year</option>
-                      <option>Year</option>
-                    </select>
-                  </div>
-
-                </div>
-
-              </div>
-
+        <div class="form-section ">
+          <h3 class="color-blue">إضافة قيود الخصائص
+          </h3>
+          <div class="md-form mb-3">
+            <div class="">
+              <select class="form-control ">
+                <option>مكان الخاصية</option>
+                <option>مكان الخاصية</option>
+                <option>مكان الخاصية</option>
+              </select>
 
             </div>
           </div>
+          <div class="prop-list">
+            <div class="singleProp">
+              <div class="md-form mb-3">
+                <div class="">
+                  <select class="form-control ">
+                    <option>يحتوي على </option>
+                    <option>يحتوي على </option>
+                    <option>يحتوي على </option>
+                  </select>
 
-          <div class="form-section ">
-            <h3 class="color-blue">Property</h3>
-            <div class="md-form mb-3">
-              <div class="">
-                <select class="form-control ">
-                  <option>Property search</option>
-                  <option>Property search</option>
-                  <option>Property search</option>
-                </select>
-
-              </div>
-            </div>
-            <div class="prop-list">
-              <div class="singleProp">
-                <div class="md-form mb-3">
-                  <div class="">
-                    <select class="form-control ">
-                      <option>Contains</option>
-                      <option>Contains</option>
-                      <option>Contains</option>
-                    </select>
-
-                  </div>
                 </div>
+              </div>
 
-                <div class="md-form mb-3">
-                  <div class="">
-                    <select class="form-control ">
-                      <option></option>
-                      <option></option>
-                      <option></option>
-                    </select>
+              <div class="md-form mb-3">
+                <div class="">
+                  <select class="form-control ">
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
 
-                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="w-100 text-right mb-3 mt-3 addingProp">
-              <a title="Adding Property" href="javascript:addPropSearch()">
-                +
-              </a>
-              <a title="Remove Property" href="javascript:removePropSearch()">
-                -
-              </a>
-            </div>
-
-
           </div>
+
+          <div class="w-100 text-right mb-3 mt-3 addingProp">
+            <a title="Adding Property" href="javascript:addPropSearch()">
+              +
+            </a>
+            <a title="Remove Property" href="javascript:removePropSearch()">
+              -
+            </a>
+          </div>
+
 
         </div>
 
       </div>
 
     </div>
+
   </div>
+</div>
 
 
 
 
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
-  <script src="vendor/jquery-match-height/jquery-match-height.js"></script>
-  <!-- Custom scripts for this template -->
-  <script src="js/agency.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+<script src="vendor/jquery-match-height/jquery-match-height.js"></script>
+<!-- Custom scripts for this template -->
+<script src="js/agency.js"></script>
 
 </body>
 

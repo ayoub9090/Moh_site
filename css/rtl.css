@@ -232,6 +232,7 @@ body {
 
 .shortcuts span {
     margin-left: 15px;
+    margin-bottom: 5px;
 }
 
 .inner-content-data .small {
@@ -244,7 +245,7 @@ body {
     font-weight: normal;
 }
 
-.sadeeqa-modal .close span, .modal-header .close {
+.sadeeqa-modal .close span, .modal-header .close, .search_link {
     font-family: 'SF_Compact_Display_Regular';
 }
 
@@ -293,6 +294,10 @@ body {
 .breadcrumb-item+.breadcrumb-item::before {
     padding-left: .5rem;
     padding-right: 0;
+}
+
+.announcement .latest-success h4 {
+    font-weight: normal;
 }
 
 .any-questions-wrapper {
@@ -426,9 +431,57 @@ div.icon-sheet {
     margin-bottom: 15px;
 }
 
+.bg_green .dropdown-item {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.navTabs li a {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+@media(min-width:992px) {
+    .search_form.search_form--ar>a {
+        display: none;
+    }
+    .search_form .trans {
+        padding-right: 0;
+        width: 98%;
+    }
+    .search_form .dropdown-box {
+        font-size: 18px;
+    }
+}
+
 @media(max-width:767px) {
     .carousel-indicators {
         margin-right: 10%;
+    }
+    .carousel-caption h3 {
+        margin-bottom: 5px;
+    }
+    .page-section h3.section-subheading {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .search_form .trans {
+        padding-top: 8px;
+    }
+    .owl-next {
+        right: 0;
+    }
+    .owl-prev {
+        left: 0;
+    }
+    .navbar-brand {
+        float: none;
+    }
+    #mainNav .navbar-toggler {
+        float: left;
+        margin-top: 5px;
     }
 }
 

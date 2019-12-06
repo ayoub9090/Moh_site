@@ -1707,7 +1707,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .bg-announcement .announcement {
-	max-width: 570px;
+	/*max-width: 570px;*/
 	float: right;
 	/* background: rgba(29, 43, 78, 0.8); */
 	padding: 10px;
@@ -2801,6 +2801,9 @@ li.plusMinus a {
 	.rates-holder, .any-questions-wrapper, .need-help {
 		right: 0 !important;
 		display: none!important;
+	}
+	.need-help-open {
+		display: none !important
 	}
 	div.icon-sheet {
 		border-radius: 50px;
