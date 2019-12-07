@@ -453,6 +453,14 @@ div.icon-sheet {
     font-weight: normal;
 }
 
+.optionsRange>label:first-child {
+    text-align: right;
+}
+
+.optionsRange>label:last-child {
+    text-align: left;
+}
+
 @media(min-width:992px) {
     .search_form.search_form--ar>a {
         display: none;

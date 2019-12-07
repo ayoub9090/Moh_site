@@ -141,11 +141,24 @@
 
 
     <div class="row mt-4 pt-4">
-      <div class="col-sm-6">
+
+      <div class="col-12 mb-2">
         <h3>ما رأيك في خدمة التراخيص الصحية؟
         </h3>
         <p class="small">حرك المؤشر لإعطاء إجابتك</p>
+      </div>
+      <div class="col-sm-6">
 
+
+        <div class="rangecontainer">
+          <input type="range" min="1" max="100" value="50" class="sliderRange" id="myRange">
+          <div class="optionsRange optionsRange--3">
+            <label>غير مهم
+            </label>
+            <label>مهم</label>
+            <label>مهم جدا</label>
+          </div>
+        </div>
       </div>
       <div class="col-sm-6">
         <form>
@@ -179,6 +192,28 @@
 
 </section>
 
+<hr />
+<section class="page-section relative page-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <h4>Content Evaluation</h4>
 
+      </div>
+      <div class="col-sm-3">
+        <h4>Reviewed</h4>
+
+      </div>
+      <div class="col-sm-3">
+        <h4>Last Updated</h4>
+        <p>11.7.2019</p>
+      </div>
+      <div class="col-sm-3">
+        <h4>Did you find the content useful?</h4>
+
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- @import '../_inner_footer-rtl.kit' -->

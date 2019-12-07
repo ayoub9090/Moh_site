@@ -94,7 +94,9 @@ $(document).ready(function () {
       $('.any-questions-wrapper').addClass('any-questions-wrapper-open');
     }, 600);
   */
-
+  if (getCookieValue('grayscaleOn') === "1") {
+    $('html').addClass('grayScale');
+  }
   $('#quastion .box').matchHeight({ byrow: true });
   $('.aligned_box div').matchHeight({ byrow: true });
   $('.aligned_box h4').matchHeight({ byrow: true });
@@ -260,4 +262,33 @@ $('a.toggleLink').click(function () {
 function toggle(el) {
   $('.toggleParent > div').hide();
   $(el).fadeIn(200);
+}
+
+function toggleGrayScale() {
+  if (getCookieValue('grayscaleOn') === "1") {
+    setCookie('grayscaleOn', 0, { expires: 365, path: '/' });
+  } else {
+    setCookie('grayscaleOn', 1, { expires: 365, path: '/' });
+  }
+
+  $('html').toggleClass('grayScale');
+
+}
+
+function setCookie(name, value, days) {
+  var expires;
+
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toGMTString();
+  } else {
+    expires = "";
+  }
+  document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + expires + "; path=/";
+}
+
+function getCookieValue(a) {
+  var b = document.cookie.match('(^|[^;]+)\\s*' + a + '\\s*=\\s*([^;]+)');
+  return b ? b.pop() : '';
 }
