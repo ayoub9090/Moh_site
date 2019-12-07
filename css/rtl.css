@@ -449,6 +449,10 @@ div.icon-sheet {
     text-align: left;
 }
 
+.btn-blue {
+    font-weight: normal;
+}
+
 @media(min-width:992px) {
     .search_form.search_form--ar>a {
         display: none;

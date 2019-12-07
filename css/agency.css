@@ -47,6 +47,14 @@ i.icomoon {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-quick_clock:before {
+	content: "\e933";
+}
+
+.icon-undo:before {
+	content: "\e934";
+}
+
 .icon-arabic_letter:before {
 	content: "\e932";
 }
@@ -1663,6 +1671,11 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 	outline: 0;
 }
 
+.btn-blue:hover {
+	background-color: #fff;
+	color: #1e365c;
+}
+
 .h3-small {
 	font-size: 94%;
 }
@@ -2798,6 +2811,9 @@ li.plusMinus a {
 }
 
 @media(max-width:767px) {
+	.item--circled {
+		margin-top: 20px;
+	}
 	.mob-text-center {
 		text-align: center!important;
 	}
@@ -3274,6 +3290,18 @@ h3.no_border {
 	margin-bottom: 20px;
 }
 
+.item--circled .icon {
+	border-radius: 50%;
+	color: #fff;
+	font-size: 66px;
+	padding-top: 12px;
+	text-align: center;
+	width: 116px;
+	height: 116px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
 .item--service {
 	border-radius: 12px;
 	padding: 15px;
@@ -3346,6 +3374,11 @@ h3.no_border {
 	color: #4cc0af;
 }
 
+.form-control--gray {
+	background-color: #eee;
+	border-radius: 8px;
+}
+
 .main-select {
 	/*max-width: 340px;*/
 	width: auto;
@@ -3414,6 +3447,17 @@ h3.no_border {
 .side_nav .carousel-indicators li {
 	width: 3px;
 	height: 92px;
+}
+
+.last-update {
+	font-size: 14px;
+}
+
+@media(min-width:992px) {
+	.last-update {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 /* Track */
