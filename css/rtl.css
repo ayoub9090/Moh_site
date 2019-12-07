@@ -258,8 +258,16 @@ body {
     font-weight: normal;
 }
 
-.sadeeqa-modal .close span, .modal-header .close, .search_link, .icon, div.icon-sheet {
+.sadeeqa-modal .close span, .modal-header .close, .search_link, .icon, div.icon-sheet, .container-input-trans .submit, .search_form>a {
     font-family: 'SF_Compact_Display_Regular';
+}
+
+.panel-collapse {
+    margin-left: 10px;
+}
+
+.page-section h2.section-heading {
+    font-size: 38px;
 }
 
 .semi-header .info span, .semi-header .info a {
