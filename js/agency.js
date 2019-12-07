@@ -16,9 +16,6 @@
   });
 
 
-
-
-
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function () {
     $('.navbar-collapse').collapse('hide');
@@ -88,6 +85,12 @@ if ($('.prop-list').length > 0) {
 }
 
 $(document).ready(function () {
+
+  /** below code for demo use of showing survey pop up in survey page **/
+  if ($('#survey-box').length > 0) {
+    $('#survey-box').modal();
+  }
+
 
   /*
     setTimeout(function () {
@@ -292,3 +295,10 @@ function getCookieValue(a) {
   var b = document.cookie.match('(^|[^;]+)\\s*' + a + '\\s*=\\s*([^;]+)');
   return b ? b.pop() : '';
 }
+
+
+/**** Demo use for survey****/
+$('.rates-number a').click(function () {
+  $('.rates-number a.selected').removeClass('selected');
+  $(this).addClass('selected');
+})

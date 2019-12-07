@@ -41,6 +41,10 @@ html.grayScale {
 	filter: grayscale(100%);
 }
 
+img {
+	max-width: 100%;
+}
+
 i.icomoon {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: 'icomoon' !important;
@@ -2103,6 +2107,63 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 	margin-bottom: 20px;
 }
 
+.rates-number a {
+	color: #1b365d;
+	display: inline-block;
+	font-size: 18px;
+	padding: 5px 20px;
+	transition: all 0.2s;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.survey-pagination a {
+	font-weight: bold;
+	font-size: 20px;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.survey-pagination a i {
+	vertical-align: middle;
+	font-size: 16px;
+}
+
+.rates-number a:hover, .rates-number a.selected {
+	background: #FFF;
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+	border-radius: 6px;
+}
+
+.review-section>div {
+	position: relative;
+}
+
+.stars-rating span {
+	text-shadow: 0 0 3px #223659;
+	color: #fff;
+}
+
+.stars-rating span.checked {
+	color: #223659;
+	text-shadow: none;
+}
+
+@media(min-width:767px) {
+	.review-section>div:before {
+		position: absolute;
+		content: '';
+		width: 1px;
+		height: 80%;
+		top: 10%;
+		background: #223659;
+		left: 1px;
+	}
+	.review-section>div:first-child:before {
+		content: none
+	}
+}
+
 .rangecontainer {
 	width: 100%;
 	padding-top: 15px;
@@ -2778,6 +2839,27 @@ li.plusMinus a {
 	padding: 20px;
 }
 
+.survey-modal .modal-body .close {
+	opacity: 1;
+}
+
+.survey-modal .modal-body .close {
+	opacity: 1;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 1;
+}
+
+.survey-modal .modal-body {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.survey-modal .modal-body {
+	position: relative;
+}
+
 @media(max-width:992px) {
 	.radius-input-search, .radius-select:not(.last) {
 		margin-bottom: 15px;
@@ -2892,6 +2974,17 @@ li.plusMinus a {
 }
 
 @media(max-width:767px) {
+	.modal-body .survey_img {
+		max-width: 122px;
+		margin-bottom: 20px;
+	}
+	.btn-rows-mob>div {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.review-section>div {
+		margin-bottom: 20px;
+	}
 	.item--circled {
 		margin-top: 20px;
 	}
@@ -3636,6 +3729,11 @@ h3.no_border {
 	display: inline-block;
 }
 
+.icon-arrow-down.left {
+	transform: rotate(90deg);
+	display: inline-block;
+}
+
 .view-more-researched i {
 	font-size: 14px;
 	vertical-align: middle;
@@ -3702,6 +3800,12 @@ h3.no_border {
 }
 
 @media(max-width:767px) {
+	h1 {
+		font-size: 2.1rem;
+	}
+	h4 {
+		font-size: 1.3rem;
+	}
 	.sidebar--sticky {
 		max-width: 100% !important;
 		width: 100%;

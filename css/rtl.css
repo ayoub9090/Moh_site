@@ -241,11 +241,24 @@ body {
     font-size: 85%;
 }
 
+.icon-arrow-down.left {
+    transform: rotate(-90deg);
+}
+
+.survey-pagination a {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.icon-arrow-down.right {
+    transform: rotate(90deg);
+}
+
 #footer h5 {
     font-weight: normal;
 }
 
-.sadeeqa-modal .close span, .modal-header .close, .search_link, .icon {
+.sadeeqa-modal .close span, .modal-header .close, .search_link, .icon, div.icon-sheet {
     font-family: 'SF_Compact_Display_Regular';
 }
 
@@ -453,8 +466,22 @@ div.icon-sheet {
     font-weight: normal;
 }
 
+.survey-modal .modal-body .close {
+    right: auto;
+    left: 10px;
+}
+
 .optionsRange>label:first-child {
     text-align: right;
+}
+
+@media(min-width:767px) {
+    .review-section>div:first-child:before {
+        content: '';
+    }
+    .review-section>div:last-child:before {
+        content: none;
+    }
 }
 
 .optionsRange>label:last-child {
