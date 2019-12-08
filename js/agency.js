@@ -302,3 +302,17 @@ $('.rates-number a').click(function () {
   $('.rates-number a.selected').removeClass('selected');
   $(this).addClass('selected');
 })
+
+function FilterServices(type) {
+
+  if (type === 'all') {
+    $('.media-section .row-matched-items > div').fadeIn();
+  } else {
+    $('.media-section .row-matched-items > div').filter(function () {
+      return $(this).attr('data-type') !== type;
+    }).hide(0);
+    $('.media-section .row-matched-items > div').filter(function () {
+      return $(this).attr('data-type') === type;
+    }).fadeIn(200);
+  }
+}

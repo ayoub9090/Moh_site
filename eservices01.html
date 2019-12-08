@@ -285,25 +285,25 @@
     <div class="row">
       <div class="col-12">
         <ul class="navTabs navTabs--multi hide-mob">
-          <li><a class="active"><span>All</span></a></li>
-          <li><a href="#"><span>Patient</span></a></li>
-          <li><a href="#"><span>Citizen</span></a></li>
-          <li><a href="#"><span>Student</span></a></li>
-          <li><a href="#"><span>Visitors to Saudi</span></a></li>
-          <li><a href="#"><span>Traveller</span></a></li>
-          <li><a href="#"><span>Caregivers</span></a></li>
-          <li><a href="#"><span>Voulnteers</span></a></li>
+          <li><a href="javascript:FilterServices('all')" class="active"><span>All</span></a></li>
+          <li><a href="javascript:FilterServices('Patient')"><span>Patient</span></a></li>
+          <li><a href="javascript:FilterServices('Citizen')"><span>Citizen</span></a></li>
+          <li><a href="javascript:FilterServices('Student')"><span>Student</span></a></li>
+          <li><a href="javascript:FilterServices('Visitors-to-Saudi')"><span>Visitors to Saudi</span></a></li>
+          <li><a href="javascript:FilterServices('Traveller')"><span>Traveller</span></a></li>
+          <li><a href="javascript:FilterServices('Caregivers')"><span>Caregivers</span></a></li>
+          <li><a href="javascript:FilterServices('Voulnteers')"><span>Voulnteers</span></a></li>
         </ul>
 
-        <select class="navTabsMob only-mob form-control  radius-select">
-          <option>All</option>
-          <option>Patient</option>
-          <option>Citizen</option>
-          <option>Student</option>
-          <option>Visitors to Saudi</option>
-          <option>Traveller</option>
-          <option>Caregivers</option>
-          <option>Voulnteers</option>
+        <select class="navTabsMob only-mob form-control radius-select" onchange="FilterServices(this.value)">
+          <option value="all">All</option>
+          <option value="Patient">Patient</option>
+          <option value="Citizen">Citizen</option>
+          <option value="Student">Student</option>
+          <option value="Visitors-to-Saudi">Visitors to Saudi</option>
+          <option value="Traveller">Traveller</option>
+          <option value="Caregivers">Caregivers</option>
+          <option value="Voulnteers">Voulnteers</option>
         </select>
 
       </div>
@@ -333,7 +333,7 @@
 
     <div class="row row-matched-items">
 
-      <div class="col-sm-4">
+      <div class="col-sm-4" data-type="Patient">
         <div class="item item--service bg-gray text-green">
           <div class="icon bg-green">
             <i class="icomoon icon-person1"></i>
@@ -345,7 +345,7 @@
         </div>
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-sm-4" data-type="Patient">
         <div class="item item--service bg-gray text-green">
           <div class="icon bg-green">
             <i class="icomoon icon-group_persons"></i>
@@ -356,7 +356,7 @@
           </p>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4" data-type="Citizen">
         <div class="item item--service bg-gray text-green">
           <div class="icon bg-green">
             <i class="icomoon icon-hand1"></i>
@@ -367,7 +367,7 @@
           </p>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4" data-type="Student">
         <div class="item item--service bg-gray text-green">
           <div class="icon bg-green">
             <i class="icomoon icon-personPlus"></i>
@@ -378,7 +378,7 @@
           </p>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4" data-type="Visitors-to-Saudi">
         <div class="item item--service bg-gray text-green">
           <div class="icon bg-green">
             <i class="icomoon icon-needle"></i>
@@ -390,7 +390,7 @@
         </div>
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-sm-4" data-type="Visitors-to-Saudi">
         <div class="item item--service bg-gray text-green">
           <div class="icon bg-green">
             <i class="icomoon icon-location_building"></i>
@@ -402,7 +402,7 @@
         </div>
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-sm-4" data-type="Traveller">
         <div class="item item--service bg-gray text-green">
           <div class="icon bg-green">
             <i class="icomoon icon-pxType"></i>
@@ -413,7 +413,7 @@
           </p>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4" data-type="Caregivers">
         <div class="item item--service bg-gray text-green">
           <div class="icon bg-green">
             <i class="icomoon icon-aid"></i>

@@ -2296,6 +2296,7 @@ div.icon-sheet:hover {
 	background: #fff;
 	border-radius: 10px 0px 0px 30px;
 	height: 38px;
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
 }
 
 .rates-holder .close {
@@ -3924,6 +3925,9 @@ h3.no_border {
 		bottom: 0;
 		width: 3px;
 		background: #ced4dd;
+	}
+	.latest-success {
+		max-width: 500px;
 	}
 }
 
