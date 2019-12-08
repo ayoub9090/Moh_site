@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.035" height="25.044" viewBox="0 0 20.035 25.044">
+    <defs>
+        <style>
+            .cls-1{fill:url(#linear-gradient)}.cls-2{fill:url(#linear-gradient-2)}.cls-3{fill:#1e365c}
+        </style>
+        <linearGradient id="linear-gradient" x2="1" y1=".5" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset=".612" stop-color="#5e98ca"/>
+            <stop offset="1" stop-color="#5e98ca"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x2="1" y1=".5" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#80a661"/>
+            <stop offset=".956" stop-color="#80a661"/>
+        </linearGradient>
+    </defs>
+    <g id="Group_198" data-name="Group 198" transform="translate(-33.769 -3302.132)">
+        <rect id="Rectangle_652" width="5.009" height="19.2" class="cls-1" data-name="Rectangle 652" rx="2.504" transform="translate(41.283 3307.976)"/>
+        <rect id="Rectangle_653" width="5.009" height="25.044" class="cls-2" data-name="Rectangle 653" rx="2.504" transform="translate(48.796 3302.132)"/>
+        <circle id="Ellipse_25" cx="2.713" cy="2.713" r="2.713" class="cls-3" data-name="Ellipse 25" transform="translate(33.769 3321.75)"/>
+    </g>
+</svg>

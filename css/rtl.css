@@ -258,7 +258,7 @@ body {
     font-weight: normal;
 }
 
-.sadeeqa-modal .close span, .modal-header .close, .search_link, .icon, div.icon-sheet, .container-input-trans .submit, .search_form>a {
+.sadeeqa-modal .close span, .modal-header .close, .search_link, .icon, div.icon-sheet, .container-input-trans .submit, .search_form>a, .list-nav-sidebar li a>span:first-child, .list-dashboard-bottom li a>span:first-child {
     font-family: 'SF_Compact_Display_Regular';
 }
 
@@ -350,6 +350,31 @@ body {
 .bg-toggle .toggle {
     right: 42px;
     left: auto;
+}
+
+.navSidebar {
+    border-left: 2px solid #eee;
+    border-right: 0;
+}
+
+.list-nav-sidebar li a, .list-dashboard-bottom li a {
+    font-size: 16px;
+}
+
+@media (min-width: 992px) {
+    .list-nav-sidebar li a.active span:last-child {
+        border-radius: 10px 0px 0px 10px;
+        font-size: 18px;
+        left: auto;
+        right: 70%;
+        white-space: nowrap;
+        padding-top: 14px;
+    }
+}
+
+.boardered-1 {
+    border-right: 1px solid;
+    border-left: 0;
 }
 
 .need-help .close {
