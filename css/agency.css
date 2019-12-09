@@ -1805,7 +1805,11 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .map_placeholder img {
 	max-width: 100%;
 	width: 100%;
-	max-height: 200px;
+	/*max-height: 200px;*/
+}
+
+.circled_service img {
+	cursor: pointer;
 }
 
 .home-announcement {

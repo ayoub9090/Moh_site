@@ -316,3 +316,9 @@ function FilterServices(type) {
     }).fadeIn(200);
   }
 }
+
+//make the image in let us serve you better section toggle the dropdown
+$('.circled_service img').on('click', function (e) {
+  e.stopPropagation();
+  $(this).parents('.col-md-4').find('[data-toggle=dropdown]').dropdown('toggle');
+});
