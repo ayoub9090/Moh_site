@@ -8,6 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
   <title>MoH - Home</title>
 
   <!-- Bootstrap core CSS -->
@@ -257,14 +258,14 @@
             <li><a href="#" title="Dashboard" class="text-blue "><span><i
                     class="icomoon icon-dashboard-icon"></i></span>
                 <span>Dashboard</span></a></li>
-            <li><a title="Analytics" href="#" class="text-blue "><span><i class="icomoon icon-analytics"></i></span>
+            <li><a title="Analytics" href="#" class="text-blue active"><span><i
+                    class="icomoon icon-analytics"></i></span>
                 <span>Analytics</span></a></li>
-            <li><a title="Indicators" href="#" class="text-lightBlue "><span><i
+            <li><a title="Indicators" href="#" class="text-lightBlue"><span><i
                     class="icomoon icon-tachometer"></i></span>
                 <span>Indicators</span></a>
             </li>
-            <li><a title="Research" href="#" class="text-green active"><span><i
-                    class="icomoon icon-research"></i></span>
+            <li><a title="Research" href="#" class="text-green"><span><i class="icomoon icon-research"></i></span>
                 <span>Research</span></a></li>
           </ul>
           <ul class="list-dashboard-bottom">
@@ -276,93 +277,177 @@
           </ul>
         </div>
       </div>
-      <div class="col-sm-10">
-        <div class="row">
+      <div class="col-sm-10 mb-4">
+
+
+        <!--nav links -->
+        <div class="row mb-4">
           <div class="col-12">
-            <h3 class="mb-4">Main Reports</h3>
+            <ul class="navTabs navTabs--3 hide-mob">
+              <li><a href="javascript:showMedia('all')" class="active"><span>All</span></a></li>
+              <li><a href="javascript:showMedia('#MainReports')"><span>Main Reports</span></a></li>
+              <li><a href="javascript:showMedia('#OtherReports')"><span>Other Reports</span></a></li>
+
+            </ul>
+
+            <select class="navTabsMob only-mob form-control  radius-select">
+              <option value="all">All</option>
+              <option value="#MainReports">Main Reports</option>
+              <option value="#OtherReports">Other Reports</option>
+            </select>
+
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-9">
 
-            <div class="row">
-              <div class="col-sm-4">
 
-                <div class="item item--image pt-0 mb-4">
-                  <div class="icon mb-2">
-                    <img src="img/sample-dashboard2.jpg" />
-                  </div>
-                  <p class="color-blue mb-2">Health Financing
 
-                  </p>
-                  <div class="links-set ">
-                    <a href="#" class="excel-color"><i class="icomoon icon-excel"></i></a>
-                    <a href="#" class="pdf-color"><i class="icomoon icon-pdf_download"></i></a>
-                  </div>
+
+        <div class="media-section mt-4" id="MainReports">
+
+          <div class="row row-matched-items owl-carousel-mob">
+
+            <div class="col-sm-3">
+              <div class="item item--image pt-0 mb-4">
+                <div class="icon mb-2">
+                  <img src="img/sample-dashboard4.jpg" />
                 </div>
-                <div class="item item--image pt-0 mb-4">
-                  <div class="icon mb-2">
-                    <img src="img/sample-dashboard5.jpg" />
-                  </div>
-                  <p class="color-blue mb-2">Country Capacity
-                  </p>
-                  <div class="links-set ">
-                    <a href="#" class="excel-color"><i class="icomoon icon-excel"></i></a>
-                    <a href="#" class="pdf-color"><i class="icomoon icon-pdf_download"></i></a>
-                  </div>
+                <p class="color-blue mb-2">Permanent and seasonal health facilities during the Hajj season 1440 AH
+                  (2019).
+                </p>
+                <div class="links-set ">
+                  <a href="#" class="excel-color"><i class="icomoon icon-excel"></i></a>
+                  <a href="#" class="pdf-color"><i class="icomoon icon-pdf_download"></i></a>
                 </div>
-              </div>
-              <div class="col-sm-8">
-                <div class="item item--image pt-0 mb-4">
-                  <div class="icon mb-2">
-                    <img src="img/sample-dashboard1.jpg" />
-                  </div>
-                  <h4 class="color-blue mb-2">Health Activities
-
-                  </h4>
-                  <div class="links-set large">
-                    <a href="#" class="excel-color"><i class="icomoon icon-excel"></i></a>
-                    <a href="#" class="pdf-color"><i class="icomoon icon-pdf_download"></i></a>
-                  </div>
-                </div>
-
               </div>
             </div>
 
-
-
-          </div>
-
-          <div class="col-sm-3 boardered-1">
-            <h4 class="mb-4">Featured Reports</h4>
-            <div class="row">
-              <div class="col-12 mb-4">
-                <p class="mb-0">Service delivery
-
+            <div class="col-sm-3">
+              <div class="item item--image pt-0 mb-4">
+                <div class="icon mb-2">
+                  <img src="img/sample-dashboard4.jpg" />
+                </div>
+                <p class="color-blue mb-2">Permanent and seasonal health facilities during the Hajj season 1440 AH
+                  (2019).
                 </p>
-                <a href="#" class="text-blue font-bold small" title="Click to view report">Click to view report</a>
-              </div>
-              <div class="col-12 mb-4">
-                <p class="mb-0">Health determinants and
-                  risks
-
-                </p>
-                <a href="#" class="text-blue font-bold small" title="Click to view report">Click to view report</a>
-              </div>
-              <div class="col-12 mb-4">
-                <p class="mb-0">Coverage of selected
-                  interventions
-
-
-                </p>
-                <a href="#" class="text-blue font-bold small" title="Click to view report">Click to view report</a>
-              </div>
-              <div class="col-12 mb-4">
-
-                <a href="#" class="btn btn-blue-outline" title="View All">View All</a>
+                <div class="links-set ">
+                  <a href="#" class="excel-color"><i class="icomoon icon-excel"></i></a>
+                  <a href="#" class="pdf-color"><i class="icomoon icon-pdf_download"></i></a>
+                </div>
               </div>
             </div>
+            <div class="col-sm-3">
+              <div class="item item--image pt-0 mb-4">
+                <div class="icon mb-2">
+                  <img src="img/sample-dashboard4.jpg" />
+                </div>
+                <p class="color-blue mb-2">Permanent and seasonal health facilities during the Hajj season 1440 AH
+                  (2019).
+                </p>
+                <div class="links-set ">
+                  <a href="#" class="excel-color"><i class="icomoon icon-excel"></i></a>
+                  <a href="#" class="pdf-color"><i class="icomoon icon-pdf_download"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="item item--image pt-0 mb-4">
+                <div class="icon mb-2">
+                  <img src="img/sample-dashboard4.jpg" />
+                </div>
+                <p class="color-blue mb-2">Permanent and seasonal health facilities during the Hajj season 1440 AH
+                  (2019).
+                </p>
+                <div class="links-set ">
+                  <a href="#" class="excel-color"><i class="icomoon icon-excel"></i></a>
+                  <a href="#" class="pdf-color"><i class="icomoon icon-pdf_download"></i></a>
+                </div>
+              </div>
+            </div>
+
           </div>
+
+
+          <div class="row text-center mt-4">
+            <div class="col-lg-12">
+              <a href="#" class="text-blue view-all">View all</a>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <div class="media-section mt-4" id="OtherReports">
+
+          <div class="row row-matched-items ">
+
+            <div class="col-sm-3">
+              <div class="item item--image pt-0 mb-4">
+                <div class="icon mb-2">
+                  <img src="img/sample-dashboard2.jpg" />
+                </div>
+                <p class="color-blue mb-2">Permanent and seasonal health facilities during the Hajj season 1440 AH
+                  (2019).
+                </p>
+                <div class="links-set ">
+                  <a href="#" class="excel-color"><i class="icomoon icon-excel"></i></a>
+                  <a href="#" class="pdf-color"><i class="icomoon icon-pdf_download"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="item item--image pt-0 mb-4">
+                <div class="icon mb-2">
+                  <img src="img/sample-dashboard1.jpg" />
+                </div>
+                <p class="color-blue mb-2">Permanent and seasonal health facilities during the Hajj season 1440 AH
+                  (2019).
+                </p>
+                <div class="links-set ">
+                  <a href="#" class="excel-color"><i class="icomoon icon-excel"></i></a>
+                  <a href="#" class="pdf-color"><i class="icomoon icon-pdf_download"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="item item--image pt-0 mb-4">
+                <div class="icon mb-2">
+                  <img src="img/sample-dashboard4.jpg" />
+                </div>
+                <p class="color-blue mb-2">Permanent and seasonal health facilities during the Hajj season 1440 AH
+                  (2019).
+                </p>
+                <div class="links-set">
+                  <a href="#" class="excel-color"><i class="icomoon icon-excel"></i></a>
+                  <a href="#" class="pdf-color"><i class="icomoon icon-pdf_download"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="item item--image pt-0 mb-4">
+                <div class="icon mb-2">
+                  <img src="img/sample-dashboard4.jpg" />
+                </div>
+                <p class="color-blue mb-2">Permanent and seasonal health facilities during the Hajj season 1440 AH
+                  (2019).
+                </p>
+                <div class="links-set ">
+                  <a href="#" class="excel-color"><i class="icomoon icon-excel"></i></a>
+                  <a href="#" class="pdf-color"><i class="icomoon icon-pdf_download"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="row text-center mt-4">
+            <div class="col-lg-12">
+              <a href="#" class="text-blue view-all">View all</a>
+            </div>
+          </div>
+
         </div>
 
       </div>
