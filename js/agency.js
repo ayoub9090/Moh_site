@@ -322,3 +322,30 @@ $('.circled_service img').on('click', function (e) {
   e.stopPropagation();
   $(this).parents('.col-md-4').find('[data-toggle=dropdown]').dropdown('toggle');
 });
+
+
+
+var increasedFontSize = 0;
+function increaseSize() {
+  if (increasedFontSize <= 0) {
+    $('.page-content').find('a,p,h1,h3,h4,h5,h2,h6,span').each(function () {
+      $(this).css({
+        'font-size': parseFloat($(this).css('font-size')) + 2
+      });
+      increasedFontSize += 2;
+    });
+
+  }
+}
+
+function decreaseSize() {
+  if (increasedFontSize >= 0) {
+    $('.page-content').find('a,p,h1,h3,h4,h5,h2,h6,span').each(function () {
+      $(this).css({
+        'font-size': parseFloat($(this).css('font-size')) - 2
+      });
+
+      increasedFontSize -= 2;
+    });
+  }
+}

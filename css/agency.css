@@ -59,6 +59,38 @@ i.icomoon {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-link_icon:before {
+	content: "\e942";
+}
+
+.icon-g_share:before {
+	content: "\e943";
+}
+
+.icon-loudspeaker:before {
+	content: "\e93c";
+}
+
+.icon-interactive_map:before {
+	content: "\e93d";
+}
+
+.icon-protect-plus:before {
+	content: "\e93e";
+}
+
+.icon-document-heart:before {
+	content: "\e93f";
+}
+
+.icon-chat_exponantial:before {
+	content: "\e940";
+}
+
+.icon-multi-persons:before {
+	content: "\e941";
+}
+
 .icon-excel:before {
 	content: "\e93b";
 }

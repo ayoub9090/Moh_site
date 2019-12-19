@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ou11yp');
+  src:  url('fonts/icomoon.eot?ou11yp#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ou11yp') format('truetype'),
+    url('fonts/icomoon.woff?ou11yp') format('woff'),
+    url('fonts/icomoon.svg?ou11yp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-link_icon:before {
+  content: "\e942";
+}
+.icon-g_share:before {
+  content: "\e943";
+}
+.icon-loudspeaker:before {
+  content: "\e93c";
+}
+.icon-interactive_map:before {
+  content: "\e93d";
+}
+.icon-protect-plus:before {
+  content: "\e93e";
+}
+.icon-document-heart:before {
+  content: "\e93f";
+}
+.icon-chat_exponantial:before {
+  content: "\e940";
+}
+.icon-multi-persons:before {
+  content: "\e941";
+}
+.icon-excel:before {
+  content: "\e93b";
+}
+.icon-tachometer:before {
+  content: "\e937";
+}
+.icon-analytics1:before {
+  content: "\e93a";
+}
+.icon-download:before {
+  content: "\e935";
+}
+.icon-research:before {
+  content: "\e936";
+}
+.icon-analytics:before {
+  content: "\e938";
+}
+.icon-dashboard-icon:before {
+  content: "\e939";
+}
+.icon-quick_clock:before {
+  content: "\e933";
+}
+.icon-undo:before {
+  content: "\e934";
+}
+.icon-arabic_letter:before {
+  content: "\e932";
+}
+.icon-play-circle-solid:before {
+  content: "\e92c";
+}
+.icon-volume-up-solid:before {
+  content: "\e92d";
+}
+.icon-bars-solid:before {
+  content: "\e92e";
+}
+.icon-times-solid:before {
+  content: "\e92f";
+}
+.icon-plus-solid:before {
+  content: "\e930";
+}
+.icon-minus-solid:before {
+  content: "\e931";
+}
+.icon-service_tick:before {
+  content: "\e92b";
+}
+.icon-pdf_download:before {
+  content: "\e924";
+}
+.icon-research_cases:before {
+  content: "\e925";
+}
+.icon-hajj:before {
+  content: "\e926";
+}
+.icon-testing_service:before {
+  content: "\e927";
+}
+.icon-health:before {
+  content: "\e928";
+}
+.icon-physicians:before {
+  content: "\e929";
+}
+.icon-hospital:before {
+  content: "\e92a";
+}
+.icon-copyright:before {
+  content: "\e916";
+}
+.icon-tescope:before {
+  content: "\e923";
+}
+.icon-certificate:before {
+  content: "\e915";
+}
+.icon-certificate1:before {
+  content: "\e914";
+}
+.icon-aid:before {
+  content: "\e917";
+}
+.icon-pxType:before {
+  content: "\e918";
+}
+.icon-location_building:before {
+  content: "\e919";
+}
+.icon-needle:before {
+  content: "\e91a";
+}
+.icon-personPlus:before {
+  content: "\e91b";
+}
+.icon-hand1:before {
+  content: "\e91c";
+}
+.icon-group_persons:before {
+  content: "\e91d";
+}
+.icon-person1:before {
+  content: "\e91e";
+}
+.icon-quastionMark:before {
+  content: "\e91f";
+}
+.icon-transactionInquiry:before {
+  content: "\e920";
+}
+.icon-calendar1:before {
+  content: "\e921";
+}
+.icon-track:before {
+  content: "\e922";
+}
+.icon-filter1:before {
+  content: "\e912";
+}
+.icon-sheet:before {
+  content: "\e911";
+}
+.icon-sun1:before {
+  content: "\e910";
+}
+.icon-brightness1:before {
+  content: "\e913";
+}
+.icon-sun:before {
+  content: "\e90f";
+}
+.icon-smily:before {
+  content: "\e900";
+}
+.icon-setting:before {
+  content: "\e901";
+}
+.icon-mail:before {
+  content: "\e902";
+}
+.icon-phone:before {
+  content: "\e903";
+}
+.icon-sad:before {
+  content: "\e904";
+}
+.icon-angry:before {
+  content: "\e905";
+}
+.icon-so-happy:before {
+  content: "\e906";
+}
+.icon-linkden:before {
+  content: "\e907";
+}
+.icon-youtube:before {
+  content: "\e908";
+}
+.icon-instagram:before {
+  content: "\e909";
+}
+.icon-arrow-down:before {
+  content: "\e90a";
+}
+.icon-search:before {
+  content: "\e90b";
+}
+.icon-facebook:before {
+  content: "\e90c";
+}
+.icon-twitter:before {
+  content: "\e90d";
+}
+.icon-happy:before {
+  content: "\e90e";
+}
